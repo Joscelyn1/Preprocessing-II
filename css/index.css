@@ -194,11 +194,27 @@ header .head {
   align-items: center;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header .head {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 header .head .col1 {
   width: 50%;
 }
+@media (max-width: 500px) {
+  header .head .col1 {
+    width: 100%;
+  }
+}
 header .head .col2 {
   width: 50%;
+}
+@media (max-width: 500px) {
+  header .head .col2 {
+    width: 100%;
+  }
 }
 header .head .col2 nav {
   float: right;

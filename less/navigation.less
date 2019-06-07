@@ -4,6 +4,7 @@
 
 header {
 
+
     border-bottom: 1px gray dashed;
 
     .head {
@@ -13,15 +14,33 @@ header {
         align-items: center;
         margin: 0 auto;
 
+        @media @mobile {
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+
+
         .col1 {
             width: 50%;
+
+            @media @mobile {
+                width: 100%;
+              }
         }
 
         .col2 {
             width: 50%;
+            @media @mobile {
+                width: 100%;
+              }
         
             nav {
                 float: right;
+
+                @media @mobile {
+                    
+                }
     
                 a {
                     color: inherit;
