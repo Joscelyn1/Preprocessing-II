@@ -6,41 +6,54 @@ header {
 
 
     border-bottom: 1px gray dashed;
+    width: 100%;
 
     .head {
         padding: 2rem 0;
         max-width: 800px;
         display: flex;
         align-items: center;
-        margin: 0 auto;
 
         @media @mobile {
+            display: flex;
             flex-direction: column;
-            justify-content: space-between;
-          }
+            flex-wrap: wrap;
+        }
+
 
 
 
         .col1 {
             width: 50%;
-
             @media @mobile {
                 width: 100%;
-              }
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+            }
+
+
         }
 
         .col2 {
             width: 50%;
             @media @mobile {
                 width: 100%;
-              }
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+            }
+
         
             nav {
                 float: right;
-
                 @media @mobile {
-                    
+                    float: none;
                 }
+
+
     
                 a {
                     color: inherit;

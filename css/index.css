@@ -139,6 +139,8 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  width: 100%;
 }
 h1,
 h2,
@@ -150,13 +152,28 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  h4 {
+    font-size: 2rem;
+  }
 }
 p {
   line-height: 1.5;
@@ -186,18 +203,19 @@ img {
 }
 header {
   border-bottom: 1px gray dashed;
+  width: 100%;
 }
 header .head {
   padding: 2rem 0;
   max-width: 800px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
 }
 @media (max-width: 500px) {
   header .head {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 header .head .col1 {
@@ -206,6 +224,9 @@ header .head .col1 {
 @media (max-width: 500px) {
   header .head .col1 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 header .head .col2 {
@@ -214,10 +235,18 @@ header .head .col2 {
 @media (max-width: 500px) {
   header .head .col2 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 header .head .col2 nav {
   float: right;
+}
+@media (max-width: 500px) {
+  header .head .col2 nav {
+    float: none;
+  }
 }
 header .head .col2 nav a {
   color: inherit;
@@ -234,6 +263,14 @@ header .head .col2 nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .home .topSection {
   border-bottom: 1px dashed gray;
