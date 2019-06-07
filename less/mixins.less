@@ -6,6 +6,15 @@
     justify-content: space-between;   
 }
 
-.nice-buttons(@primaryColor, @buttonWidth) {
-    
+.nice-buttons(@button-color, @button-width, @radius, @font-color, @height) {
+    border-radius: @radius;
+    background-color: @button-color;
+    width: @button-width;
+    color: @font-color;
+    height: @height;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
 }
